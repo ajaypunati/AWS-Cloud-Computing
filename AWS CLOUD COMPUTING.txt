@@ -1,0 +1,364 @@
+INTRODUCTION:-
+========================
+-->Cloud computing is the on-demand delivery of computer power,storage,database ,applications and other It resoures via internet with pay-as-you-go pricing.
+-->Cloud Computing - totally based on services --servers.
+-->Cloud --> the  more resoruces-the  less u pay.
+-->Cloud refers to network of servers hosted on internet that allows users to store ,manage and access data over the internet rather than on a local hard drive or physical Server.
+               OR
+-->cloud --rented service 
+         --pooling of the resource
+         --on-demand service
+-->we can use two types of aws accounts they are root and aws academy accounts.
+-->csp-->cloud service provider
+-->isp-->internet service provider
+-->AMI-->Amazon Machine Image.
+-->There is no down time for server.
+-->cloud dont have specific definition it has expalanation-->multiple technologies come and meet in this cloud.
+=================================================================================================================================================================
+CLOUD BENIFITS:-
+================================
+         -->scalability
+         -->accessibility/flexibility
+         -->collabration / security
+         -->cost-effective/cost Savings.
+================================================================================================================
+CLIENT-SERVER MODEL:-
+=================================
+-->The Client-Server model is about a client that interacts and makes requests to a computer server.
+-->server -computer -->it gives the services.
+-->client -computer -->services are taken by client
+-->work group -->in this group any one can act as server and client. eg:-sharing a file -->everyone can share it and everyone can access it.
+==================================================================================================================================================
+SOME OF THE CLOUD VENDORS:-
+===============================
+    1. AWS
+    2. AZURE
+    3. GOOGLE CLOUD
+    4. ORACLE CLOUD
+    5. RACK SPACE 
+    6. ALIBABA CLOUD
+-->we are going to work with servers in the cloud.
+=================================================================================================================================================================
+SERVER LAYERS:-
+============================
+-->user --developer -- websiter -- python code --they dont know about hardware,os,software to be installed for the deployment.
+-->software(apache , mean ,react,--web software) -->SAAS-->Gmail,Outlook
+-->operating system of its own version   -->PAAS -->system software
+-->hardware(cpu,ram,storage)  -->this called virtual machine -->provided by the cloud-->IAAS
+================================================================================================================================================================
+ON-PREMISES SERVER:-
+=====================
+-->The server which is maintained within the premises is called on-permises server(eg:- servers in aditya are maintained within the college)
+-->every server is a Virtual Machine.
+-->Physical Server --100+ virtual machines based on configuration -->rich persons will buy this server.
+======================================================================================================================================
+-->NIST -->National Institute of Science and Technology 
+-->NIST says that cloud should be combination of characteristics ,services and models.
+--> CLOUD CHARACTERISTICS:-
+===============================================
+There are 5 characteristics:-
+    -->on-demand self service
+    -->resoruce pooling -->cloud point
+    -->broad network access  -->No matterwhere you are , you can access that cloud around the world.
+    -->elasticity -->extensions or replicas.
+    -->metered services->pay as you go
+====================================================
+AWS CLOUD MODELS:-
+========================
+  -->public cloud -->aws,azure,google cloud ,oracle cloud-->It is built over the internet and can be acccessed by any user who has paid for the service.
+  -->private cloud -->it is built within the domain of intranet and owned by single organization.
+  -->community cloud -public 
+  -->hybrid cloud -- > it is built with both private and public clouds -->hybrid cloud provides access to clients , the partner network and third parties.
+===============================================================================================================================================================
+AWS CLOUD SERVICES MODELS:-
+======================================
+There are mainly three services in cloud computing they are:
+-->Infrastructure as a Service (IAAS):
+     -->it is used by network architects.
+     -->it gives access to resources like virtual machine and virtual storage.
+     -->it is a service model that provides virtualized resources over the internet.
+     -->The csp is giving the only hardware is called as IAAS.
+     -->it is pouplar among developers and researchers.
+-->Platform as a service(PAAS):
+     -->it is used by developers.
+     -->it gives access to run time environment to deployment and development tools for applications.
+     -->it is a cloud computing model that delivers tools that are used for development of applications.
+     -->The csp is giving the only hardware + os is called as "PAAS".
+     -->it is popular among developers who focus on the development of apps and scripts.
+-->Software as a service(SAAS):
+     -->it is used by end users.
+     -->it gives access to the end user. 
+     -->it is service model in cloud computing that hosts software to make it available to clients.
+     -->the csp is giving the only hardware + os+ application software is called as "SAAS".
+     -->it is popular among consumers and companies.
+-->Anything or everything as a Service(XAAS)
+-->Function as a service(FAAS).
+==============================================================================================================================================================
+AWS GLOBAL INFRASTRUCTURE:-
+================================
+AWS global Infrastructure divide into:
+ -->Aws Availability Zone -> AZs
+ -->Aws regions -->regions are not based on any country or territory -->they are based on geographical location.
+ -->Aws datacenters-->server rooms.
+ -->Aws availability zones and datacenters are connected with high bandwidth , low latency , highly available network cables -->fiber optic cables.
+ -->AWS is maintaining 31 launched regions with 99 availability zones.
+================================================================================================================================================
+DEPLOYMNET MODELS:-
+=======================================
+-->There are three types of deployment models:-
+   -->CLOUD BASED DEPLOYMENT-->Everything runs in the cloud.
+   -->ON-PREMISES DEPLOYMENT-->Deploy resources using virtualization and management tools.-->It is also called as private cloud deployment.
+   -->HYBRID DEPLOYMENT    -->In Hybrid , You connect cloud resources to an on-premises infrastructure.
+=================================================================================================================================================================
+EC2 INSTANCE:-
+============================
+-->EC2 is a virtual server / virtual machine in the Aws cloud.
+-->EC2->ECC->Elastic compute cloud
+-->EC2 instance, In other cloud vendors it is called as vm server.
+-->Why AWS EC2:- ->It makes the process of Increasing and Decreasing of Capacity Easier, EC2 is secure and you only pay for what you need.
+      -->it is flexible , reliable, scalable,etc...
+-->there are four regions for Ec2 Instances.
+-->virtualization is the cloud concept related to pooling and sharing resources.
+-->pooling means combining two or more things at a time.
+==============================================================================================================================================================
+TYPES OF INSTANCES:-
+===========================
+-->There are different instances that are used based on the needs. -->needs can be like requirement for computer , memory, storage.
+-->They are:
+     1.General Purpose Instance:- It balances computing, memory and Networking resources.
+     2.Compute optimized Instance:- There is need for high compute.
+     3.Memory optimized Instance:- This type of Instance  can deliver large dataset workloads fast.
+     4.Accelerated Computing Instance:- This type of Instance uses hardware Accelerators.
+     5.Storage optimized Instance.
+===============================================================================================================================================================
+AWS NETWORKING:-
+====================================
+    AWS VPC(virtual private cloud):-
+    ========================================
+    -->It is a isolated section of AWS cloud where we can launch aws resoruces in a virtual network that we have defined.
+    -->By using vpc we can communicate with the user or group of users.
+    -->vpn(virtual private network)
+    -->To create VPC WE NEED TO SETUP FOLLOWING ONES:-
+      -->create vpc
+      -->create Subnets
+      -->create internet gateways
+      -->create Route Tables
+     -->if we create two subnets one with public ip and other with private ip then use NAT to connect to the internet for updates.
+   ----------------------------------------------------------------------------------------------------------------------------------
+   Internet Gateway:-
+   ===================
+   -->Internet gateway act as Door between the vpc and internet.
+   -->Wihtout Internet gateway we cannnot Access resources in VPC.
+   -->public traffic can be allowed to your VPC.
+   -->The Traffic is allowed by an Internet gateway.
+ -------------------------------------------------------------------------------------------------------------------------------------------
+   Virtual Private Gateway:-
+  =============================
+   -->virtual Private Gateway is used to access private resources in the vpc.
+   -->It has extra layers of  protection.
+   -->The virtual private gateway encrypts the internet traffic , keeping it protected.
+ --------------------------------------------------------------------------------------------------------------------------------------------
+  Subnets:-
+  =============
+  -->Subnet is a Section of VPC.
+  -->The Subnet Allows you to group resources.
+  -->The Grouping can have different security needs.
+  -->You can have both public and private subnets.
+ ---------------------------------------------------------------------------------------------------------------------------------------------
+ Public Subnet:-
+ ================
+ -->Public Subnets have Resources that the public can access.
+ For example: compnay website like w3schhols.com
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Private Subnets:-
+===============
+-->private Subnets have resources that can only access through the private Network.
+For example: database hloding customer data.
+=================================================================================================================================================================
+ AWS S3(simple  storage service bucket):-
+ ==========================================
+-->s3(simple  storage service) bucket -->upload the floder and run the webapplication
+     -->after creating s3 bucket ,we need to create one file folder and then we need to upload our project file into that folder and we need to make every file as public using "make public by using ACLS(access contorl lists)".
+     -->In the next step copy that url and paste in new tab  our files will be displayed.
+-->we need to give unique name for our bucket and it should contain small letters.
+-->By default we can Create 100 buckets in aws.
+-->We can upload any type of file.
+-->We can upload maximum of 5TB storage files.
+-->In s3 Data stores as Objects.
+===============================================================================================================================================================
+AWS LOAD BALANCER:-
+=========================================
+-->The main Aim of Load-Balancer is to control the incoming web Traffic and make sure of health checks , to control the incoming  web traffic we need to add instances to the Load balancer.
+-->Service that we used is ->"Elastic load balancing service".
+-->The Load balancer is a single point of contact for incoming web traffic.
+-->The balancer accepts requests and directs them to the appropriate instances.
+-->Request timout->after how much time the instance is reporting.
+-->interval -->after every 5 sec or 10 sec the instances will have health checks.
+-->unhealthy checks.
+-->healthy checks.
+=================================================================================================================================================================
+AWS EC2 AUTO SCALING:-
+=========================================
+-->Scaling is about only using the resources that you need.
+-->AWS AUTO SCALING is a service that automatically adjsuts the number of instances to match the demand of the application.
+-->It Automatically increase or decrease the instances based on the reqiurement or need to match the demand of the application.
+-->WHY AWS EC2 AUTO SCALING?:-
+-----------------------------------
+-->Servers can get more requests than they can handle.
+-->Too many requests can cause timeouts and outages.
+-->AWS EC2 Auto Scaling allows you to add or remove EC2 instances automatically in order to match the demand of the application.
+==============================================================================================================================================================
+AWS SQS:-
+===========
+-->AWS Simple Queue Service is also Known as AWS SQS.
+-->SQS is a message Queuing service.
+-->It Exchanges and stores messages  between software components.
+-->The service addd messages LIKE in a Queue.
+================================================================================================================================================================
+AWS CLOUD LAMBDA:-
+===================
+-->AWS Lambda is a serverless compute service.
+-->This service allows you to run code wihtout needing to think about servers.(you only think about the code)
+-->You only pay for the compute time that you use.
+HOW DOES AWS LAMBDA WORKS:
+--------------------------
+-->Deploy your code to the Lambda.
+-->Make the code ready to trigger an event.
+-->The code runs only when triggered.
+-->pay only when your code is running.
+--------------------------------------------
+Benefits of AWS Lambda:-
+-----------------------
+->No need for managing servers
+->Automatic Scaling
+->Pay-as-you-go-pricing
+->performance optimization
+=================================================================================================================================================================
+AWS ELASTCIC KUBERNETES SERVICE:-
+====================================
+-->AWS Elastic Kubernetes service is also known as AWS EKS.
+-->EKS is a managed service that lets you run kubernetes on AWS.
+-->It is built for scaling with kubernetes.
+ What is Kuberenetes?
+----------------------
+-->Kubernetes is a open-source software.
+-->It helps you deploy and manage containerized applications.
+-->It has a large community.
+---------------------------------------------------------------------
+EKS Benefits:-
+---------------
+->AWS service integration
+->kubernetes cost saving
+->automated kubernetes control plane security
+================================================================================================================================================================
+AWS CLOUD FARGATE:-
+================
+-->AWS Fargate is a serverless compute service.
+-->Fargate has pas-as-you-go-pricing model.
+-->It helps to deploy and manage Applications.
+-->Fargate manage the infrastructure for you.
+-->Fargate can be used along with both ECS(Elastic compute service) and EKS(Elastic Kubernetes Service) .
+===============================================================================================================================================================
+AWS Elastic Beanstack(EBS):-
+============================
+-->Elastic beanstack is a web infrastructure management service(Platform as a service).
+-->It allows Quick Deployment of your application.
+-->It Reduces Management complexity.
+-->keeps control in your hands
+         -->Choose your instance type.
+         -->Choose your Database.
+         -->set and adjust auto scaling.
+         -->update your application.
+         -->Access server log files.
+         -->enable HTTPS on a load balancer.
+-->Elastic  Beanstack supports various platforms such as:
+         -->java
+         -->Docker
+         -->PHP
+         -->Java with Tomcat
+         -->python
+         -->Ruby
+         -->.Net
+================================================================================================================================================================
+AWS ROUTE 53:-
+=====================
+AWS ROUTE 53 is a Highly Available and Scalable Cloud Domain Name System(DNS) web service. It is essential for conversion of user friendly domain names in to ip addresses so that internet communication can proceed without difficulties. The Following are some of the main features explaning on how aws route 53 functions well:
+ -->Domain Registration and Management.
+ -->Traffic Routing and Load Balancing.
+ -->Global DNS Resolution
+
+Benefits and Features of AWS Route 53:
+----------------------------------------
+  -->Highly Reilable
+  -->Scalable
+  -->Easy to use
+  -->Secure
+  -->Flexible
+  -->Health Check
+==================================================================================================================================================================
+Aws RDS(Relational Database Service):-
+=====================================
+-->Aws RDS is also Known as Aws Relational Database Service.
+-->RDS is a service that automates database tasks.
+-->It enables running Relational Databases in Aws Cloud.
+-->Aws RDS helps you complete administrative tasks faster.
+-->Relational database commonly use sql to store and query data.
+-->RDS supports following database engines:
+       -->MySQL
+       -->postgreSQL
+       -->AWS Aurora
+       -->Oracle database.
+       -->Maria DataBase.
+==================================================================================================================================================================
+AWS Dynamo DB:-
+================
+-->AWS DynamoDB is a non-relational, NoSQL Database.
+-->It is a Serverless Database.
+-->DynamoDB is a High Performance Service.
+What is Non-relational database:-
+----------------------------------
+-->One of the structure types of the non-relational databse is Key-value pairs.
+-->Data key represents an item, and data value represents that item attributes.
+-->Each item can contain different attributes.
+-->We can remove any attribute from any item at any time.
+==================================================================================================================================================================
+Difference Between Aws RDS and Aws DynamoDB:-
+=============================================
+         RDS                                                        DynamoDB
+      ------------                                              ----------------
+-->Supports Complex Data                                     -->Supports Simple Structured Data
+-->Stores Data in database tables                            -->Stores data in documents
+-->More Expensive than AWS DynamoDB                          -->Cheaper Than AWS RDS
+-->Slower than AWS DynamoDB                                  -->Faster Than AWS RDS.
+==================================================================================================================================================================
+AWS EFS(ELASTIC FILE SYSTEM):-
+==============================
+-->AWS EFS is also Called as AWS Elastic File System.
+-->Data in EFS is accessed via File paths.
+-->Compared to AWS EBS , AWS EFS saves the data in many Availability Zones.
+-->It is ideal if many services need to access the same data at the same time.
+-->Automatically scales.
+==================================================================================================================================================================
+AWS CLOUD PRICING MODELS :-
+===========================
+-->AWS Cloud has many different pay-as-you-go pricing Options:
+  -->Pay for what you use.
+  -->pay less when you Reserve.
+  -->pay less with volume based discount When you use more.
+  -->AWS Pricing Calculator.
+==================================================================================================================================================================
+AWS CLOUD WATCH:-
+======================
+-->AWS Cloud Watch is a Cloud Monitoring and Management Service.
+-->Cloud Watch lets you monitor your resources.
+-->It is a web based Service.
+-->Configure the service to monitor and set alarms based on your metrics.
+---------------------------------------------------------------------------
+CLOUD WATCH ALARMS:-
+---------------------
+-->Cloud Watch lets you Create Automatic alarms.
+-->Configure alarms as you like.
+-->Alarms are triggered at thresholds defined by you.
+-->Alarms are used to control Resources.
+==================================================================================================================================================================
+
